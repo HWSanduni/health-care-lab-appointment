@@ -1,0 +1,17 @@
+<mat-sidenav-container autosize>
+    <mat-sidenav [opened]="true" mode="side">
+      <mat-nav-list>
+        <a mat-list-item>
+          <span class="entry">
+            <div (click)="navigateHandler('doctor')">
+              <mat-icon>house</mat-icon>
+              <span>Doctor</span>
+            </div>
+          </span >
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
