@@ -1,7 +1,8 @@
 export class DoctorDto{
     id:number=0;
     doctorID:string='';
-    name:string='';
+    firstName:string='';
+    lastName:string='';
     telNumber:string='';
     nic:string='';
     email:string='';

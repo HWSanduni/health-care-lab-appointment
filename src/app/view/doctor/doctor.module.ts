@@ -2,9 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { DoctorRoutingModule } from './doctor-routing.module';
-import { DoctorComponent } from './doctor.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatComponentModule } from 'src/app/mat-component.module';
+import { DoctorComponent } from './doctor/doctor.component';
 
 
 @NgModule({
@@ -13,10 +11,7 @@ import { MatComponentModule } from 'src/app/mat-component.module';
   ],
   imports: [
     CommonModule,
-    DoctorRoutingModule,
-    MatComponentModule,
-    FormsModule,
-    ReactiveFormsModule
+    DoctorRoutingModule
   ]
 })
 export class DoctorModule { }

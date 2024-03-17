@@ -1,0 +1,44 @@
+<mat-toolbar color="primary">
+    <mat-icon >home</mat-icon>
+</mat-toolbar>
+
+<mat-sidenav-container autosiz color="primary">
+  <mat-sidenav [opened]="true" mode="side">
+      <mat-nav-list>
+        <span class="entry" (click)="navigateHandler('appointment')">
+          <mat-icon>assignment</mat-icon>
+          <span>Appointment</span>
+        </span>
+        <span class="entry" (click)="navigateHandler('doctor')">
+          <mat-icon>person</mat-icon>
+          <span>Doctor</span>
+        </span>
+          
+          <span class="entry" (click)="navigateHandler('patient')">
+            <mat-icon>person</mat-icon>
+            <span>Patient</span>
+          </span>
+          
+          <span class="entry" (click)="navigateHandler('technician')">
+            <mat-icon>house</mat-icon>
+            <span>Technician</span>
+          </span>
+          
+          <span class="entry" (click)="navigateHandler('report')">
+            <mat-icon>house</mat-icon>
+            <span>Report</span>
+          </span>
+          
+          <span class="entry" (click)="navigateHandler('doctor')">
+            <mat-icon>house</mat-icon>
+            <span>Paiment</span>
+          </span>
+          
+      </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+

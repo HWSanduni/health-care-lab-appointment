@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatComponentModule } from './mat-component.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MatComponentModule } from './mat-component.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatComponentModule
+    MatComponentModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
