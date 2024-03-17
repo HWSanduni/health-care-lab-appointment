@@ -1,3 +1,5 @@
+import { AppointmentDto } from "./AppointmentDto";
+
 export class TechnicianDto{
     id:number=0;
     technicianId:string='';
@@ -7,4 +9,5 @@ export class TechnicianDto{
     nic:string='';
     email:string='';
     testType:string='';
+    appointmentDto!:AppointmentDto;
 }

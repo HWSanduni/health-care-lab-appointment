@@ -38,6 +38,6 @@ import { PatientService } from 'src/app/service/patient.service';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers:[DashbordService,DocrotService,PatientService,AppointmentService,TechnicianService,ReportService]
+  providers:[DashbordService,DocrotService,PatientService,AppointmentService,TechnicianService,ReportService,AppointmentService]
 })
 export class DashboardModule { }

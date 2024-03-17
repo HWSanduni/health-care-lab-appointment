@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TechnicianService } from 'src/app/service/technician.service';
 
 @Component({
   selector: 'app-technician',
@@ -6,5 +7,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./technician.component.css']
 })
 export class TechnicianComponent {
+  displayedColumns: string[] = ['docoterName','patientName', 'date', 'time','action'];
+  dataSource:any[]=[];
+  constructor(private technicianService:TechnicianService){}
+
+
+
+ ngOnInit(): void {
+    this.getAllTechnicianDetails();
+  }
+
+  getAllTechnicianDetails(){
+    this.technicianService.getTechnicianDetails().subscribe(response=>{
+
+      console.log(response)
+    });
+
+  }
 
 }

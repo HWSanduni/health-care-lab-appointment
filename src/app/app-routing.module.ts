@@ -13,6 +13,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./view/dashbord/dashboard.module').then((m)=> m.DashboardModule)
   },
+  {
+    path: 'technician',
+    loadChildren: () =>
+      import('./view/technician/technician.module').then((m)=> m.TechnicianModule)
+  },
 ];
 
 @NgModule({

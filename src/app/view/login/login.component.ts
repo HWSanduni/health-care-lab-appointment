@@ -59,8 +59,8 @@ export class LoginComponent  implements OnInit {
     }
      
       console.log(this.userData.userType)
-
-      this.router.navigate(['/dashbaord']);
+      this.userNavigation(this.userData.userType);
+      
   }, error => {
    // this.alert("Warning", "Incorrect UserName Or Password", "warning", "");
   });
@@ -75,7 +75,8 @@ export class LoginComponent  implements OnInit {
     }else if(userType === 'PATIENT'){
       this.router.navigate(['/patient']);
     }else if(userType === 'TECHNICIAN'){
-      this.router.navigate(['/dashbaord']);
+      console.log("-----")
+      this.router.navigate(['/technician']);
     }
   }
 }
