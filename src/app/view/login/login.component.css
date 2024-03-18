@@ -1,0 +1,17 @@
+.container{
+    display: flex;           
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 10px; 
+    height: 90vh;
+}
+.mat-card{
+    max-width: 500px;
+    min-height: 700px;
+}
+mat-toolbar{
+    position:fixed;
+    top:0;
+    z-index: 2;
+  }

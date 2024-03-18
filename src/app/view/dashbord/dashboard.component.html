@@ -1,0 +1,50 @@
+<!-- <mat-toolbar color="primary">
+    <mat-icon >home</mat-icon>
+</mat-toolbar> -->
+<mat-toolbar style="background-color: rgb(37, 150, 190);color: white; font-size:25px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+  Health Care Lab
+ </mat-toolbar>
+
+<mat-sidenav-container autosiz style="background-color: rgb(37, 150, 190);">
+  <mat-sidenav [opened]="true" mode="side" style="background-color: rgb(37, 150, 190);width:17%;">
+      <mat-nav-list>
+        <br>
+        <span class="entry" (click)="navigateHandler('appointment')" style="background-color:white;font-size: 15px;border-radius: 15px;">
+          <mat-icon>assignment</mat-icon>
+          <span>Appointment</span>
+        </span>
+        <br>
+        <span class="entry" (click)="navigateHandler('doctor')" style="background-color:white;font-size: 15px;border-radius: 15px;">
+          <mat-icon>person</mat-icon>
+          <span>Doctor</span>
+        </span>
+          <br>
+          <span class="entry" (click)="navigateHandler('patient')" style="background-color:white;font-size: 15px;border-radius: 15px;">
+            <mat-icon>accessible</mat-icon>
+            <span>Patient</span>
+          </span>
+          <br>
+          <span class="entry" (click)="navigateHandler('technician')" style="background-color:white;font-size: 15px;border-radius: 15px;">
+            <mat-icon>person</mat-icon>
+            <span>Technician</span>
+          </span>
+          <br>
+          <span class="entry" (click)="navigateHandler('report')" style="background-color:white;font-size: 15px;border-radius: 15px;">
+            <mat-icon>description</mat-icon>
+            <span>Report</span>
+          </span>
+          <br>
+          <span class="entry" (click)="navigateHandler('doctor')" style="background-color:white;font-size: 15px;border-radius: 15px;">
+            <mat-icon>receipt</mat-icon>
+            <span>Paiment</span>
+          </span>
+          
+      </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <br>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
