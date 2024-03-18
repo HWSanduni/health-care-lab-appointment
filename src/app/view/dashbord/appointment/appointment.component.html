@@ -2,7 +2,7 @@
     <mat-card class="main-card">
       <mat-card-content>
         <mat-card class="example-card">
-          <mat-card-header>
+          <mat-card-header style="background-color: rgb(37, 150, 190);color: white;">
             <div mat-card-avatar class="example-header-image"></div>
             <mat-card-title>Appointment Information</mat-card-title>
           </mat-card-header>
@@ -11,7 +11,7 @@
               <hr>
               <mat-accordion class="example-headers-align">
                 <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
-                  <mat-expansion-panel-header>
+                  <mat-expansion-panel-header style="background-color: rgb(37, 150, 190);color: white;">
                     <mat-panel-title>
                       Doctor Appointment
                     </mat-panel-title>
@@ -64,43 +64,43 @@
                          <br>
                     </mat-card-content>
                   </form>
-
+<br>
                   <mat-card-content>
                     <mat-card class="example-card">
-                      <table mat-table class="main-table center" [dataSource]="doctorDataSource" >
+                      <table mat-table class="mat-elevation-z8" [dataSource]="doctorDataSource" >
                         <ng-container matColumnDef="doctorId">
-                            <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%;"> Doctor Id </th>
+                            <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%; background-color: rgb(37, 150, 190);color: white; "> Doctor Id </th>
                             <td mat-cell *matCellDef="let element" style="flex: 0 0 35%;"> {{element.doctor.doctorID}} </td>
                           </ng-container>
 
 
                         <ng-container matColumnDef="name">
-                          <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%;"> Name</th>
+                          <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%; background-color: rgb(37, 150, 190);color: white; "> Name</th>
                           <td mat-cell *matCellDef="let element" style="flex: 0 0 35%;"> {{element.doctor.firstName}} </td>
                         </ng-container>
                       
                         <ng-container matColumnDef="contactNumber">
-                          <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%;"> Contact Number </th>
+                          <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%; background-color: rgb(37, 150, 190);color: white; "> Contact Number </th>
                           <td mat-cell *matCellDef="let element" style="flex: 0 0 35%;"> {{element.doctor.telNumber}} </td>
                         </ng-container>
                       
                         <ng-container matColumnDef="patientId">
-                          <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%;"> Patient Id </th>
+                          <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%; background-color: rgb(37, 150, 190);color: white; "> Patient Id </th>
                           <td mat-cell *matCellDef="let element" style="flex: 0 0 35%;"> {{element.patientId}} </td>
                         </ng-container>
 
                         <ng-container matColumnDef="date">
-                            <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%;"> Date </th>
+                            <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%; background-color: rgb(37, 150, 190);color: white; "> Date </th>
                             <td mat-cell *matCellDef="let element" style="flex: 0 0 35%;"> {{element.date}} </td>
                           </ng-container>
 
                           <ng-container matColumnDef="time">
-                            <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%;"> Time </th>
+                            <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%; background-color: rgb(37, 150, 190);color: white; "> Time </th>
                             <td mat-cell *matCellDef="let element" style="flex: 0 0 35%;"> {{element.time}} </td>
                           </ng-container>
               
                         <ng-container matColumnDef="action">
-                          <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%;"> Action </th>
+                          <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%; background-color: rgb(37, 150, 190);color: white; "> Action </th>
                           <td mat-cell *matCellDef="let element" style="flex: 0 0 35%;"> 
                             <button mat-icon-button color="primary"  >
                               <mat-icon>edit</mat-icon>
@@ -131,7 +131,7 @@
                 </mat-expansion-panel>
               
                 <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
-                  <mat-expansion-panel-header>
+                  <mat-expansion-panel-header style="background-color: rgb(37, 150, 190);color: white;">
                     <mat-panel-title>
                         Technician Appointment
                     </mat-panel-title>
@@ -211,40 +211,40 @@
                   <br>
                   <mat-card-content>
                     <mat-card class="example-card">
-                      <table mat-table class="main-table center" [dataSource]="technicianDataSource" >
+                      <table mat-table class="mat-elevation-z8" [dataSource]="technicianDataSource" >
                         <ng-container matColumnDef="technicianId">
-                            <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%;"> Technician Id </th>
+                            <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%; background-color: rgb(37, 150, 190);color: white; "> Technician Id </th>
                             <td mat-cell *matCellDef="let element" style="flex: 0 0 35%;"> {{element.doctorId}} </td>
                           </ng-container>
 
 
                         <ng-container matColumnDef="name">
-                          <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%;"> Name</th>
+                          <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%; background-color: rgb(37, 150, 190);color: white; "> Name</th>
                           <td mat-cell *matCellDef="let element" style="flex: 0 0 35%;"> {{element.firstname}} </td>
                         </ng-container>
                       
                         <ng-container matColumnDef="contactNumber">
-                          <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%;"> Contact Number </th>
+                          <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%; background-color: rgb(37, 150, 190);color: white; "> Contact Number </th>
                           <td mat-cell *matCellDef="let element" style="flex: 0 0 35%;"> {{element.contactNumber}} </td>
                         </ng-container>
                       
                         <ng-container matColumnDef="patientId">
-                          <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%;"> Patient Id </th>
+                          <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%; background-color: rgb(37, 150, 190);color: white; "> Patient Id </th>
                           <td mat-cell *matCellDef="let element" style="flex: 0 0 35%;"> {{element.patientId}} </td>
                         </ng-container>
 
                         <ng-container matColumnDef="date">
-                            <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%;"> Date </th>
+                            <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%; background-color: rgb(37, 150, 190);color: white; "> Date </th>
                             <td mat-cell *matCellDef="let element" style="flex: 0 0 35%;"> {{element.patientId}} </td>
                           </ng-container>
 
                           <ng-container matColumnDef="time">
-                            <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%;"> Time </th>
+                            <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%; background-color: rgb(37, 150, 190);color: white; "> Time </th>
                             <td mat-cell *matCellDef="let element" style="flex: 0 0 35%;"> {{element.patientId}} </td>
                           </ng-container>
               
                         <ng-container matColumnDef="action">
-                          <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%;"> Action </th>
+                          <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%; background-color: rgb(37, 150, 190);color: white; "> Action </th>
                           <td mat-cell *matCellDef="let element" style="flex: 0 0 35%;"> 
                             <button mat-icon-button color="primary"  >
                               <mat-icon>edit</mat-icon>
@@ -284,7 +284,7 @@
         <mat-card class="example-card">
           <table mat-table class="main-table center" [dataSource]="dataSource" >
             <ng-container matColumnDef="firstname">
-              <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%;"> First Name</th>
+              <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%; background-color: rgb(37, 150, 190);color: white; "> First Name</th>
               <td mat-cell *matCellDef="let element" style="flex: 0 0 35%;"> {{element.firstname}} </td>
             </ng-container>
           
@@ -296,17 +296,17 @@
           
            
             <ng-container matColumnDef="contactNumber">
-              <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%;"> Contact Number </th>
+              <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%; background-color: rgb(37, 150, 190);color: white; "> Contact Number </th>
               <td mat-cell *matCellDef="let element" style="flex: 0 0 35%;"> {{element.contactNumber}} </td>
             </ng-container>
           
             <ng-container matColumnDef="nic">
-              <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%;"> NIC </th>
+              <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%; background-color: rgb(37, 150, 190);color: white; "> NIC </th>
               <td mat-cell *matCellDef="let element" style="flex: 0 0 35%;"> {{element.nic}} </td>
             </ng-container>
   
             <ng-container matColumnDef="action">
-              <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%;"> Action </th>
+              <th mat-header-cell *matHeaderCellDef style="flex: 0 0 35%; background-color: rgb(37, 150, 190);color: white; "> Action </th>
               <td mat-cell *matCellDef="let element" style="flex: 0 0 35%;"> 
                 <button mat-icon-button color="primary"  >
                   <mat-icon>edit</mat-icon>

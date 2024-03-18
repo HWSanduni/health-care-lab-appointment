@@ -30,6 +30,7 @@ export class DocrotService {
     const httpOptions = {
       headers: new HttpHeaders({
         'Authorization': 'Bearer ' + this.getToken(),
+        'Content-Type': 'application/json'
       })
     };
 

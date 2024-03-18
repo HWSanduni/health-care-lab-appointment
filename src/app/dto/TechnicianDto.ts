@@ -1,7 +1,7 @@
 import { AppointmentDto } from "./AppointmentDto";
 
 export class TechnicianDto{
-    id:number=0;
+    id!:number;
     technicianId:string='';
     name:string='';
     telNumber:string='';
@@ -9,5 +9,5 @@ export class TechnicianDto{
     nic:string='';
     email:string='';
     testType:string='';
-    appointmentDto!:AppointmentDto;
+    appointments!:AppointmentDto [];
 }

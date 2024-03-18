@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatComponentModule } from 'src/app/mat-component.module';
 import { AppointmentService } from 'src/app/service/appointment.service';
 import { TechnicianService } from 'src/app/service/technician.service';
+import { ReportService } from 'src/app/service/report.service';
 
 
 
@@ -24,6 +25,6 @@ import { TechnicianService } from 'src/app/service/technician.service';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers:[AppointmentService,TechnicianService,]
+  providers:[AppointmentService,TechnicianService,ReportService]
 })
 export class TechnicianModule { }

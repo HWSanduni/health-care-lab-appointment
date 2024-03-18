@@ -8,5 +8,10 @@
 }
 .mat-card{
     max-width: 500px;
-    min-height: 400px;
+    min-height: 700px;
 }
+mat-toolbar{
+    position:fixed;
+    top:0;
+    z-index: 2;
+  }
